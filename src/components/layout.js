@@ -1,46 +1,65 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React from "react"
+import { Link } from "gatsby"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
 
-import Header from "./header"
-import "./layout.css"
+import TwitterIcon from "@material-ui/icons/Twitter"
+import GitHubIcon from "@material-ui/icons/GitHub"
+import LinkedInIcon from "@material-ui/icons/LinkedIn"
+import EmailIcon from "@material-ui/icons/Email"
+
+import Seo from "./seo"
+
+const ListLink = props => (
+  <div id="list-link-style">
+    <Link
+      activeClassName="active-link"
+      style={{ textDecoration: "none", color: "#333" }}
+      to={props.to}
+    >
+      {props.children}
+    </Link>
+  </div>
+)
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
   return (
-    <>
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
+    <div id="layout">
+      <Seo />
+      <header id="header">
+        <div id="header-logo">
+          <Link to="/" style={{ textDecoration: "none", color: "#333" }}>
+            <span>Livingstone Asabahebwa</span>
+          </Link>
+        </div>
+        <div id="header-list">
+          <ListLink to="/about">About</ListLink>
+          <ListLink to="/products/">Products</ListLink>
+          <ListLink to="/blog/">Blog</ListLink>
+          <div id="dark-button">Dark</div>
+        </div>
+      </header>
+      <main id="main">{children}</main>
+      <div id="footer">
+        <div id="footer-container">
+          <div id="footer-contact">
+            <h3>Contact</h3>
+            <div id="contact-icons">
+              <TwitterIcon className="contact-icon" />
+              <GitHubIcon style={{ height: "20px" }} className="contact-icon" />
+              <LinkedInIcon className="contact-icon" />
+              <EmailIcon className="contact-icon" />
+            </div>
+          </div>
+          <div id="footer-newsletter">
+            <h3>Newsletter</h3>
+            <div id="newsletter-email">
+              <input placeholder="Email Address" />
+              <span id="subscribe">Subscribe</span>
+            </div>
+          </div>
+        </div>
       </div>
-    </>
+    </div>
   )
 }
 

@@ -1,21 +1,104 @@
 import React from "react"
-import { Link } from "gatsby"
+import { StaticQuery, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import Image from "../components/image"
-import SEO from "../components/seo"
+import Articles from "../components/articles"
+
+import "../assets/css/main.css"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+    {/* <StaticQuery
+      query={graphql`
+        query {
+          allStrapiArticle {
+            edges {
+              node {
+                strapiId
+                title
+                content
+                published_at
+                category {
+                  name
+                }
+                image {
+                  url
+                }
+              }
+            }
+          }
+        }
+      `}
+      render={data => (
+        <div id="index-page">
+          <div id="heading">
+            <div id="heading-wording">
+              <h1>
+                Hi, I'm Livingstone. I build products with TypeScript, React,
+                and GraphQL.
+              </h1>
+            </div>
+            <div id="heading-image">
+              <Image />
+            </div>
+          </div>
+
+          <h2>Articles</h2>
+          <Articles articles={data.allStrapiArticle.edges} />
+        </div>
+      )}
+    /> */}
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dignissimos
+        aut consequuntur aspernatur corrupti ratione, odit similique tenetur
+        accusantium, est nostrum esse minus iure voluptatum nihil cumque
+        blanditiis non? Odit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dignissimos
+        aut consequuntur aspernatur corrupti ratione, odit similique tenetur
+        accusantium, est nostrum esse minus iure voluptatum nihil cumque
+        blanditiis non? Odit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dignissimos
+        aut consequuntur aspernatur corrupti ratione, odit similique tenetur
+        accusantium, est nostrum esse minus iure voluptatum nihil cumque
+        blanditiis non? Odit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dignissimos
+        aut consequuntur aspernatur corrupti ratione, odit similique tenetur
+        accusantium, est nostrum esse minus iure voluptatum nihil cumque
+        blanditiis non? Odit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dignissimos
+        aut consequuntur aspernatur corrupti ratione, odit similique tenetur
+        accusantium, est nostrum esse minus iure voluptatum nihil cumque
+        blanditiis non? Odit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dignissimos
+        aut consequuntur aspernatur corrupti ratione, odit similique tenetur
+        accusantium, est nostrum esse minus iure voluptatum nihil cumque
+        blanditiis non? Odit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dignissimos
+        aut consequuntur aspernatur corrupti ratione, odit similique tenetur
+        accusantium, est nostrum esse minus iure voluptatum nihil cumque
+        blanditiis non? Odit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dignissimos
+        aut consequuntur aspernatur corrupti ratione, odit similique tenetur
+        accusantium, est nostrum esse minus iure voluptatum nihil cumque
+        blanditiis non? Odit.
+      </p>
     </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
   </Layout>
 )
 
