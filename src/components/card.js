@@ -2,30 +2,24 @@ import React from "react"
 import { Link } from "gatsby"
 // import ReactMarkdown from "react-markdown"
 import Moment from "react-moment"
+import Img from "gatsby-image"
 
-const Card = ({ article }) => {
-  function urlSlug(title) {
-    return title.toLowerCase().trim().split(/\s+/).join("-")
-  }
-  let url = urlSlug(article.node.title)
-  console.log(url)
+// import logo from "../images/2019nCoV.png"
+
+const Card = ({ title, author, featuredImgFluid, date, description, path }) => {
   return (
-    <Link to={`/blog/${article.node.strapiId}`} className="uk-link-reset">
+    <Link to={path} style={{ textDecoration: "none", color: "#333" }}>
       <div id="card">
         <div id="card-image">
-          <img
-            src={`http://localhost:1337${article.node.image[0].url}`}
-            alt={article.node.image[0].url}
-            id="card-img"
-          />
+          <Img fluid={featuredImgFluid} style={{ height: "100%" }} />
         </div>
 
         <div id="card-body">
-          <p id="title">{article.node.title}</p>
+          <h3 id="card-title">{title}</h3>
           <p id="date">
-            <Moment format="MMM Do YYYY">{article.node.published_at}</Moment>
+            <Moment format="MMM Do YYYY">{date}</Moment>
           </p>
-          <p id="card-text">{article.node.content}</p>
+          <p id="card-text">{description}</p>
           <p id="read-more">Read more →</p>
         </div>
       </div>

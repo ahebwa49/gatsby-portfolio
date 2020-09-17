@@ -2,28 +2,36 @@ import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 
 import Layout from "../components/layout"
+import Card from "../components/card"
 import Image from "../components/image"
-import Articles from "../components/articles"
+import PlanogyImage from "../components/planogyImage"
+import HotlineImage from "../components/hotlineImage"
+import BlogImage from "../components/blogImage"
 
 import "../assets/css/main.css"
 
 const IndexPage = () => (
   <Layout>
-    {/* <StaticQuery
+    <StaticQuery
       query={graphql`
-        query {
-          allStrapiArticle {
+        query BlogPosts {
+          allMarkdownRemark {
             edges {
               node {
-                strapiId
-                title
-                content
-                published_at
-                category {
-                  name
-                }
-                image {
-                  url
+                frontmatter {
+                  date
+                  title
+                  tags
+                  description
+                  author
+                  featuredImage {
+                    childImageSharp {
+                      fluid(maxWidth: 800) {
+                        ...GatsbyImageSharpFluid
+                      }
+                    }
+                  }
+                  path
                 }
               }
             }
@@ -45,60 +53,90 @@ const IndexPage = () => (
           </div>
 
           <h2>Articles</h2>
-          <Articles articles={data.allStrapiArticle.edges} />
+          {data.allMarkdownRemark.edges.map(post => {
+            const {
+              title,
+              tags,
+              author,
+              date,
+              description,
+              path,
+            } = post.node.frontmatter
+            const featuredImgFluid =
+              post.node.frontmatter.featuredImage.childImageSharp.fluid
+            const postTags = tags.split(" ")
+            console.log(postTags)
+
+            return (
+              <Card
+                tags={postTags}
+                title={title}
+                author={author}
+                date={date}
+                description={description}
+                key={`${date}__${title}`}
+                featuredImgFluid={featuredImgFluid}
+                path={path}
+              />
+            )
+          })}
+          <div id="products">
+            <h1>Products</h1>
+            {/* <p>
+              Here you will find some of my personal projects I've worked on and
+              built over the years. Some are alive and thriving while others
+              have been buried in the graveyard of my Github 😅.
+            </p> */}
+            <div id="product">
+              <div id="product-image">
+                <PlanogyImage />
+              </div>
+              <div id="product-description">
+                <a href="https://planogy.com/" target="_blank">
+                  <h3>Planogy</h3>
+                </a>
+                <p>
+                  A tool that helps you keep track of your design work. We allow
+                  designers to share design assets with their team who can leave
+                  comments and explain additional details with simple shapes.
+                </p>
+              </div>
+            </div>
+            <div id="product">
+              <div id="product-image">
+                <HotlineImage />
+              </div>
+              <div id="product-description">
+                <a href="https://thehotline.herokuapp.com/" target="_blank">
+                  <h3>Hotline</h3>
+                </a>
+                <p>
+                  Sometimes even if you think your relationship is healthy it
+                  can hide signs of abuse from one of the partners. This app
+                  will help you identify signs of abuse and offer resources on
+                  what you can do next.
+                </p>
+              </div>
+            </div>
+            <div id="product">
+              <div id="product-image">
+                <BlogImage />
+              </div>
+              <div id="product-description">
+                <a href="https://planogy.com/" target="_blank">
+                  <h3>2019nCoV Visualizer</h3>
+                </a>
+                <p>
+                  An interactive visualization of the exponential spread of
+                  COVID-19 across the world. These graphs are not just images.
+                  Hover over any country to see the data behind it.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       )}
-    /> */}
-    <div>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dignissimos
-        aut consequuntur aspernatur corrupti ratione, odit similique tenetur
-        accusantium, est nostrum esse minus iure voluptatum nihil cumque
-        blanditiis non? Odit.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dignissimos
-        aut consequuntur aspernatur corrupti ratione, odit similique tenetur
-        accusantium, est nostrum esse minus iure voluptatum nihil cumque
-        blanditiis non? Odit.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dignissimos
-        aut consequuntur aspernatur corrupti ratione, odit similique tenetur
-        accusantium, est nostrum esse minus iure voluptatum nihil cumque
-        blanditiis non? Odit.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dignissimos
-        aut consequuntur aspernatur corrupti ratione, odit similique tenetur
-        accusantium, est nostrum esse minus iure voluptatum nihil cumque
-        blanditiis non? Odit.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dignissimos
-        aut consequuntur aspernatur corrupti ratione, odit similique tenetur
-        accusantium, est nostrum esse minus iure voluptatum nihil cumque
-        blanditiis non? Odit.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dignissimos
-        aut consequuntur aspernatur corrupti ratione, odit similique tenetur
-        accusantium, est nostrum esse minus iure voluptatum nihil cumque
-        blanditiis non? Odit.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dignissimos
-        aut consequuntur aspernatur corrupti ratione, odit similique tenetur
-        accusantium, est nostrum esse minus iure voluptatum nihil cumque
-        blanditiis non? Odit.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dignissimos
-        aut consequuntur aspernatur corrupti ratione, odit similique tenetur
-        accusantium, est nostrum esse minus iure voluptatum nihil cumque
-        blanditiis non? Odit.
-      </p>
-    </div>
+    />
   </Layout>
 )
 

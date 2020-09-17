@@ -1,8 +1,7 @@
 import React from "react"
 import { graphql, StaticQuery } from "gatsby"
 import Layout from "../components/layout"
-import Post from "../components/Post"
-
+import Card from "../components/card"
 export default function Blog() {
   return (
     <Layout>
@@ -15,8 +14,16 @@ export default function Blog() {
                   frontmatter {
                     date
                     title
+                    tags
                     description
                     author
+                    featuredImage {
+                      childImageSharp {
+                        fluid(maxWidth: 800) {
+                          ...GatsbyImageSharpFluid
+                        }
+                      }
+                    }
                     path
                   }
                 }
@@ -25,24 +32,32 @@ export default function Blog() {
           }
         `}
         render={data => (
-          <div>
-            <h1>Blog</h1>
+          <div id="blog">
+            <h1>Articles</h1>
             {data.allMarkdownRemark.edges.map(post => {
               const {
                 title,
+                tags,
                 author,
                 date,
                 description,
                 path,
               } = post.node.frontmatter
+              const featuredImgFluid =
+                post.node.frontmatter.featuredImage.childImageSharp.fluid
+              const postTags = tags.split(" ")
+              console.log(postTags)
 
+              // console.log(post)
               return (
-                <Post
+                <Card
+                  tags={postTags}
                   title={title}
                   author={author}
                   date={date}
                   description={description}
                   key={`${date}__${title}`}
+                  featuredImgFluid={featuredImgFluid}
                   path={path}
                 />
               )

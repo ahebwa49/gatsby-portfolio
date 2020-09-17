@@ -30,7 +30,7 @@ const Article = ({ data }) => {
 
   return (
     <Layout>
-      {/* <div id="article">
+      <div id="article">
         <h1 id="article-heading">{article.title}</h1>
         <div id="article-image-container">
           <img
@@ -48,8 +48,7 @@ const Article = ({ data }) => {
             </p>
           </div>
         </div>
-      </div> */}
-      <div>Hello</div>
+      </div>
     </Layout>
   )
 }
