@@ -6,7 +6,7 @@ export default function About() {
   return (
     <Layout>
       <div id="about">
-        <h1 id="about-heading">About me</h1>
+        <h1 id="about-heading">About Me</h1>
         <p id="about-paragraph">
           Hi, my name is Livingstone and I am a remote software engineer living
           and working in Kampala, Uganda. I grew up in a small village known as
