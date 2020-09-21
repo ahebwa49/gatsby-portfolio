@@ -33,7 +33,7 @@ export default function Blog() {
         `}
         render={data => (
           <div id="blog">
-            <h1>Articles</h1>
+            <h1>Blog</h1>
             {data.allMarkdownRemark.edges.map(post => {
               const {
                 title,

@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
+import { ThemeToggler } from "gatsby-plugin-dark-mode"
 
 import TwitterIcon from "@material-ui/icons/Twitter"
 import GitHubIcon from "@material-ui/icons/GitHub"
@@ -23,6 +24,24 @@ const ListLink = props => (
   </div>
 )
 
+class Toggle extends React.Component {
+  render() {
+    return (
+      <ThemeToggler>
+        {({ theme, toggleTheme }) => (
+          <label>
+            <input
+              type="checkbox"
+              onChange={e => toggleTheme(e.target.checked ? "dark" : "light")}
+              checked={theme === "dark"}
+            />
+          </label>
+        )}
+      </ThemeToggler>
+    )
+  }
+}
+
 class Layout extends React.Component {
   constructor(props) {
     super(props)
@@ -44,7 +63,14 @@ class Layout extends React.Component {
   }
   render() {
     return (
-      <div id="layout">
+      <div
+        id="layout"
+        style={{
+          backgroundColor: "var(--bg)",
+          color: "var(--textNormal)",
+          transition: "color 0.2s ease-out, background 0.2s ease-out",
+        }}
+      >
         <Seo />
         <header id="header">
           <div id="header-logo">
@@ -63,9 +89,13 @@ class Layout extends React.Component {
             <ListLink to="/about">About</ListLink>
             <ListLink to="/products/">Products</ListLink>
             <ListLink to="/blog/">Blog</ListLink>
-            <div id="dark-button">Dark</div>
+            <div id="dark-button">
+              <Toggle />
+              Dark
+            </div>
           </div>
         </header>
+
         {this.state.showMobileMenu ? (
           <div id="mobile-menu">
             <MobileMenu closeMobileMenu={this.closeMobileMenu} />
@@ -77,13 +107,25 @@ class Layout extends React.Component {
             <div id="footer-contact">
               <h3>Contact</h3>
               <div id="contact-icons">
-                <TwitterIcon className="contact-icon" />
-                <GitHubIcon
-                  style={{ height: "20px" }}
-                  className="contact-icon"
-                />
-                <LinkedInIcon className="contact-icon" />
-                <EmailIcon className="contact-icon" />
+                <a href="https://twitter.com/lasabahebwa" target="_blank">
+                  <TwitterIcon className="contact-icon" />
+                </a>
+
+                <a href="https://github.com/ahebwa49" target="_blank">
+                  <GitHubIcon
+                    style={{ height: "20px" }}
+                    className="contact-icon"
+                  />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/livingstone-asabahebwa-290594108/"
+                  target="_blank"
+                >
+                  <LinkedInIcon className="contact-icon" />
+                </a>
+                <a href="mailto:ahebwa49@gmail.com" target="_blank">
+                  <EmailIcon className="contact-icon" />
+                </a>
               </div>
             </div>
             <div id="footer-newsletter">

@@ -81,12 +81,7 @@ const IndexPage = () => (
             )
           })}
           <div id="products">
-            <h1>Products</h1>
-            {/* <p>
-              Here you will find some of my personal projects I've worked on and
-              built over the years. Some are alive and thriving while others
-              have been buried in the graveyard of my Github 😅.
-            </p> */}
+            <h2>Products</h2>
             <div id="product">
               <div id="product-image">
                 <PlanogyImage />
