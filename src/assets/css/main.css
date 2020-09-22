@@ -8,6 +8,7 @@ body {
   --subscribe-bg: #b5b5b5;
   --header-link-hover: #17ade8;
   --block-quote: #17ade8;
+  --code-color: #333;
 
   /* background-color: var(--bg); */
   margin: 0px;
@@ -25,6 +26,7 @@ body.dark {
   --subscribe-bg: darkslategray;
   --header-link-hover: #06d6a0;
   --block-quote: #06d6a0;
+  --code-color: #333;
 }
 
 #layout {
@@ -480,9 +482,19 @@ body.dark {
   /* height: 250px; */
 }
 
+#article-content div a {
+  text-decoration: none;
+  color: var(--textLink)
+}
+
 #article-content div pre {
   padding: 20px;
   overflow-x: auto;
+  background: #f2f2f2;
+  color: var(--code-color);
+}
+
+#article-content div code {
   background: #f2f2f2;
 }
 
