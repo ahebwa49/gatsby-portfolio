@@ -11,7 +11,11 @@ export default function About() {
           Hi, my name is Livingstone and I am a remote software engineer living
           and working in Kampala, Uganda. I grew up in a small village known as
           Kalinabiri of Ntinda and graduated from{" "}
-          <a href="https://www.mak.ac.ug/" target="_blank">
+          <a
+            href="https://www.mak.ac.ug/"
+            target="_blank"
+            className="external-link"
+          >
             Makerere University
           </a>{" "}
           with a Bachelors degree in Computer Engineering. I'm a self-taught
@@ -22,11 +26,19 @@ export default function About() {
           (TypeScript nowadays!), Node, GraphQL, and React. I've been lucky to
           work with a lot of brilliant engineers along that way at some of the
           best startups in the world like{" "}
-          <a href="https://planogy.com/" target="_blank">
+          <a
+            href="https://planogy.com/"
+            target="_blank"
+            className="external-link"
+          >
             Planogy
           </a>{" "}
           and{" "}
-          <a href="https://www.swipe2payug.com/" target="_blank">
+          <a
+            href="https://www.swipe2payug.com/"
+            target="_blank"
+            className="external-link"
+          >
             Swipe2pay
           </a>
           .
@@ -34,7 +46,11 @@ export default function About() {
 
         <p id="about-paragraph">
           I am currently contracting at{" "}
-          <a href="https://aimform.com/" target="_blank">
+          <a
+            href="https://aimform.com/"
+            target="_blank"
+            className="external-link"
+          >
             aimform
           </a>{" "}
           as a frontend application developer architecting a fintech platform
