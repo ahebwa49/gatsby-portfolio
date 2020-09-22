@@ -16,10 +16,10 @@ const ListLink = props => (
   <div id="list-link-style">
     <Link
       activeClassName="active-link"
-      style={{ textDecoration: "none", color: "#333" }}
+      style={{ textDecoration: "none" }}
       to={props.to}
     >
-      {props.children}
+      <span>{props.children}</span>
     </Link>
   </div>
 )
@@ -74,7 +74,7 @@ class Layout extends React.Component {
         <Seo />
         <header id="header">
           <div id="header-logo">
-            <Link to="/" style={{ textDecoration: "none", color: "#333" }}>
+            <Link to="/" style={{ textDecoration: "none" }}>
               <span>Livingstone Asabahebwa</span>
             </Link>
           </div>
