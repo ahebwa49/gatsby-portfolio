@@ -1,6 +1,7 @@
 ---
 path: "/april-fools"
 date: "2020-04-01"
+readTime: "7 min read"
 title: "The Non-Techie’s Guide To Creating A Successful App"
 tags: "TypeScript D3js React"
 featuredImage: ../../images/2019nCoV.png

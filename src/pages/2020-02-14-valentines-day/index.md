@@ -1,6 +1,7 @@
 ---
 path: "/valentines-day"
 date: "2020-02-14"
+readTime: "7 min read"
 title: "We Launched a Product with $150. Here’s what Happened."
 tags: "TypeScript GraphQL React"
 featuredImage: ../../images/2019nCoV.png

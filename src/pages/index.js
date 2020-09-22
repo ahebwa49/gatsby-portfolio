@@ -21,6 +21,7 @@ const IndexPage = () => (
                 frontmatter {
                   date
                   title
+                  readTime
                   tags
                   description
                   author
@@ -57,6 +58,7 @@ const IndexPage = () => (
             const {
               title,
               tags,
+              readTime,
               author,
               date,
               description,
@@ -65,7 +67,8 @@ const IndexPage = () => (
             const featuredImgFluid =
               post.node.frontmatter.featuredImage.childImageSharp.fluid
             const postTags = tags.split(" ")
-            console.log(postTags)
+            // console.log(postTags)
+            console.log(post.node.frontmatter)
 
             return (
               <Card
@@ -73,6 +76,7 @@ const IndexPage = () => (
                 title={title}
                 author={author}
                 date={date}
+                readTime={readTime}
                 description={description}
                 key={`${date}__${title}`}
                 featuredImgFluid={featuredImgFluid}

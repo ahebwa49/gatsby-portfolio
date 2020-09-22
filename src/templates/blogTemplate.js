@@ -29,12 +29,7 @@ export default function Template({ data }) {
         ))}
 
         <div id="article-content">
-          <div>
-            <div dangerouslySetInnerHTML={{ __html: post.html }} />
-            <p>
-              <Moment format="MMM Do YYYY">{date}</Moment>
-            </p>
-          </div>
+          <div dangerouslySetInnerHTML={{ __html: post.html }} />
         </div>
       </div>
     </Layout>

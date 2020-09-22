@@ -6,7 +6,15 @@ import Img from "gatsby-image"
 
 // import logo from "../images/2019nCoV.png"
 
-const Card = ({ title, author, featuredImgFluid, date, description, path }) => {
+const Card = ({
+  title,
+  author,
+  readTime,
+  featuredImgFluid,
+  date,
+  description,
+  path,
+}) => {
   return (
     <Link to={path} style={{ textDecoration: "none", color: "#333" }}>
       <div id="card">
@@ -18,6 +26,7 @@ const Card = ({ title, author, featuredImgFluid, date, description, path }) => {
           <h3 id="card-title">{title}</h3>
           <p id="date">
             <Moment format="MMM Do YYYY">{date}</Moment>
+            <span> / {readTime}</span>
           </p>
           <p id="card-text">{description}</p>
           <p id="read-more">Read more →</p>

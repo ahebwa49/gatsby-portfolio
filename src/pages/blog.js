@@ -14,6 +14,7 @@ export default function Blog() {
                   frontmatter {
                     date
                     title
+                    readTime
                     tags
                     description
                     author
@@ -38,6 +39,7 @@ export default function Blog() {
               const {
                 title,
                 tags,
+                readTime,
                 author,
                 date,
                 description,
@@ -53,6 +55,7 @@ export default function Blog() {
                 <Card
                   tags={postTags}
                   title={title}
+                  readTime={readTime}
                   author={author}
                   date={date}
                   description={description}
