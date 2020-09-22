@@ -1,7 +1,7 @@
 ---
 path: "/my-first-blog"
 date: "2020-01-01"
-title: "My First Blog"
+title: "Getting started with React and D3 — interactive Bar Chart."
 tags: "TypeScript GraphQL React"
 featuredImage: ../../images/2019nCoV.png
 author: "Livingstone Asabahebwa"

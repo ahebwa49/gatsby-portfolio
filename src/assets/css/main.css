@@ -62,6 +62,16 @@ body.dark {
 
 #mobile-dark-button {
   display: none;
+  /* border: 1px solid green; */
+}
+
+#theme-name {
+  display: flex;
+  /* border: 1px solid red; */
+  padding: 0.2rem 0.7rem;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10+ and Edge */
+  user-select: none; /* Standard syntax */
 }
 
 #menu-button {
@@ -107,9 +117,9 @@ body.dark {
 }
 
 #dark-button {
+  /* border: 1px solid yellow; */
   display: flex;
   cursor: pointer;
-  padding: 0.2rem 0.7rem;
   border-radius: 5px;
   color: white !important;
   background-color: #187eaa;
@@ -424,7 +434,6 @@ body.dark {
   justify-content: center;
   font-size: 36px;
   margin-bottom: 29px;
-  color: #333;
   font-family: Archivo, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol";
@@ -457,7 +466,6 @@ body.dark {
 
 #article-content {
   padding: 58px 0px;
-  color: #333;
   font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol";
@@ -650,6 +658,9 @@ body.dark {
 
 /* On screens that are 900px or less, set the background color to olive */
 @media screen and (max-width: 900px) {
+  #theme-name {
+    padding: 0.2rem 0.3rem;
+  }
   #header {
     width: 95%;
   }
@@ -659,6 +670,9 @@ body.dark {
 }
 
 @media screen and (max-width: 800px) {
+  #theme-name {
+    padding: 0.2rem 0.3rem;
+  }
   #header {
     width: 95%;
   }
@@ -721,6 +735,10 @@ body.dark {
     width: auto;
     /* border: 1px solid blue; */
     /* padding: 0px 8px; */
+  }
+
+  #theme-name {
+    padding: 0.2rem 0.3rem;
   }
 
   #main {

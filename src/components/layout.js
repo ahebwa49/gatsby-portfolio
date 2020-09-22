@@ -28,15 +28,21 @@ class Toggle extends React.Component {
   render() {
     return (
       <ThemeToggler>
-        {({ theme, toggleTheme }) => (
-          <label>
-            <input
-              type="checkbox"
-              onChange={e => toggleTheme(e.target.checked ? "dark" : "light")}
-              checked={theme === "dark"}
-            />
-          </label>
-        )}
+        {({ theme, toggleTheme }) => {
+          if (theme === "light") {
+            return (
+              <div onClick={() => toggleTheme("dark")} id="theme-name">
+                Dark
+              </div>
+            )
+          } else {
+            return (
+              <div onClick={() => toggleTheme("light")} id="theme-name">
+                Light
+              </div>
+            )
+          }
+        }}
       </ThemeToggler>
     )
   }
@@ -79,7 +85,9 @@ class Layout extends React.Component {
             </Link>
           </div>
           <div id="mobile-header-elements">
-            <div id="mobile-dark-button">Dark</div>
+            <div id="mobile-dark-button">
+              <Toggle />
+            </div>
             <div id="menu-button" onClick={this.showMobileMenu}>
               <MenuButton />
             </div>
@@ -91,7 +99,6 @@ class Layout extends React.Component {
             <ListLink to="/blog/">Blog</ListLink>
             <div id="dark-button">
               <Toggle />
-              Dark
             </div>
           </div>
         </header>
