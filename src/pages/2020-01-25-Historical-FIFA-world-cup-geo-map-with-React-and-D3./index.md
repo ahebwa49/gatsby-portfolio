@@ -236,7 +236,7 @@ At this point in time, we should be able to see a world map with all the countri
 
 In your browser, you should be having something similar to this;
 
-![Hopper The Rabbit](../../images/wm.png)
+![World Map](../../images/wm.png)
 
 You should be quite proud of what you’ve accomplished so far!
 
