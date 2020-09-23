@@ -4,7 +4,7 @@ date: "2020-01-06"
 readTime: "8 min read"
 title: "Make a clever bitcoin price chart with React and D3"
 tags: "JavaScript D3.js React"
-featuredImage: ../../images/2019nCoV.png
+featuredImage: ../../images/bitcoin.jpg
 author: "Livingstone Asabahebwa"
 description: "I’ve been working with React and D3 for the last 2 years building custom interactive charts for startups around the world. In that time, I’ve really enjoyed the flexibility I get while making visualizations with these tools and I’ll share my vast experience with you. Yes, you!..."
 ---
@@ -364,4 +364,4 @@ Check back in a few weeks or even days, I’ll be writing about adding a brush w
 
 Thank you for reading, I hope this gives you an idea about how React and D3 work together to create custom data visualizations.
 
-### I have a keen interest about data visualization with React and D3. If you [follow me](https://twitter.com/lasabahebwa) on Twitter, I won’t waste your time?
+### I have a keen interest about data visualization with React and D3. If you [follow me](https://twitter.com/lasabahebwa) on Twitter, I won’t waste your time.

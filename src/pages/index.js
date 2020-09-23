@@ -122,7 +122,7 @@ const IndexPage = () => (
                 <BlogImage />
               </div>
               <div id="product-description">
-                <a href="https://planogy.com/" target="_blank">
+                <a href="https://covid-19-info.live/" target="_blank">
                   <h3>2019nCoV Visualizer</h3>
                 </a>
                 <p>

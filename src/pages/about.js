@@ -18,7 +18,7 @@ export default function About() {
           >
             Makerere University
           </a>{" "}
-          with a Bachelors degree in Computer Engineering. I'm a self-taught
+          with a Bachelors degree in Computer Engineering. I'm a software
           developer and have been coding for over three years.{" "}
         </p>
         <p id="about-paragraph">
@@ -63,31 +63,22 @@ export default function About() {
         <p id="about-paragraph">
           When I'm not coding, I'm in nature exploring, gaming, or swimming.
         </p>
-        <div id="about-images-container">
-          <div id="about-image">
-            <Image />
-          </div>
-          <div id="about-image">
-            <Image />
-          </div>
-          <div id="about-image">
-            <Image />
-          </div>
-          <div id="about-image">
-            <Image />
-          </div>
-        </div>
+
+        {/* <div id="about-image">
+          <Image />
+        </div> */}
+
         <h2>Speaking</h2>
         <p id="about-paragraph">
-          I've started to speak more and give back to the community. I like
-          speaking on application architecture, design patterns, and the JAM
+          I'm starting to speak on events and give back to the community. I'd
+          like to speak on typescript, react, data visualization, and the JAM
           stack.
         </p>
         <h3>
           JAM in 15: How to build and deploy a JAM stack app in 15 minutes, 2020
         </h3>
         <p id="about-paragraph">
-          An overview of the JAM stack for beginners using Gatsby and Netlify.
+          An overview of the JAM stack for beginners using Gatsby and Heroku.
           The talk is 100% in the editor walking through how to bootstrap your
           application, add a blog, and deploy all within 15 minutes.
         </p>

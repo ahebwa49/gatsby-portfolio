@@ -71,8 +71,9 @@ body.dark {
 
 #theme-name {
   display: flex;
+  font-size: 16px;
   /* border: 1px solid red; */
-  padding: 0.2rem 0.7rem;
+  padding: 0.1rem 0.4rem;
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10+ and Edge */
   user-select: none; /* Standard syntax */
@@ -125,6 +126,7 @@ body.dark {
   display: flex;
   cursor: pointer;
   border-radius: 5px;
+  margin-left: 10px;
   color: white !important;
   background-color: #187eaa;
 }
@@ -133,7 +135,7 @@ body.dark {
   color: var(--textNormal);
   display: flex;
   cursor: pointer;
-  padding: 0.2rem 0.7rem;
+  margin: 0.2rem 0.7rem;
   /* border-radius: 3px; */
   transition: border 0.1s linear;
   color: var(--textNormal);
@@ -470,7 +472,7 @@ body.dark {
 }
 
 #article-content {
-  padding: 58px 0px;
+  padding: 30px 0px;
   font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol";
@@ -493,10 +495,6 @@ body.dark {
   overflow-x: auto;
   background: #f2f2f2;
   color: var(--code-color);
-}
-
-#article-content div code {
-  /* background: #f2f2f2; */
 }
 
 blockquote {
@@ -530,16 +528,11 @@ blockquote {
   line-height: 1.625;
 }
 
-#about-images-container {
-  display: flex;
-  flex-wrap: wrap;
-  /* border: 1px solid red; */
-  margin-bottom: 20px;
-}
 
 #about-image {
-  width: 45%;
-  margin: 20px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
   height: auto;
   /* border: 1px solid blue; */
 }
@@ -691,7 +684,7 @@ blockquote {
 /* On screens that are 900px or less, set the background color to olive */
 @media screen and (max-width: 900px) {
   #theme-name {
-    padding: 0.2rem 0.3rem;
+    padding: 0.1rem 0.2rem;
   }
   #header {
     width: 95%;
@@ -703,7 +696,7 @@ blockquote {
 
 @media screen and (max-width: 800px) {
   #theme-name {
-    padding: 0.2rem 0.3rem;
+    padding: 0.1rem 0.1rem;
   }
   #header {
     width: 95%;
@@ -770,7 +763,7 @@ blockquote {
   }
 
   #theme-name {
-    padding: 0.2rem 0.3rem;
+    padding: 0.1rem 0.1rem;
   }
 
   #main {
@@ -784,7 +777,7 @@ blockquote {
     /* margin: 8px; */
     height: 50px;
     /* border: 1px solid red; */
-    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.15);
+    /* box-shadow: 0 1px 0 rgba(255, 255, 255, 0.15); */
   }
 
   #header-logo {
@@ -965,6 +958,16 @@ blockquote {
     font-size: 15.6699px;
     padding: 0px;
     margin: 0px 0px 29px;
+  }
+
+  #article-content {
+    padding-top: 10px;
+  }
+
+  blockquote {
+    margin: 0;
+    padding-left: 0.7rem;
+    margin-left: 1rem;
   }
 
   #index-page h2 {
