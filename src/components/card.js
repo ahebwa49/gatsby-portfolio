@@ -19,7 +19,10 @@ const Card = ({
     <Link to={path} style={{ textDecoration: "none", color: "#333" }}>
       <div id="card">
         <div id="card-image">
-          <Img fluid={featuredImgFluid} style={{ height: "100%" }} />
+          <Img
+            fluid={featuredImgFluid}
+            style={{ height: "100%", objectFit: "cover" }}
+          />
         </div>
 
         <div id="card-body">

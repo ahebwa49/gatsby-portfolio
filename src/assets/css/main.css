@@ -232,6 +232,7 @@ body.dark {
   /* display: flex; */
   width: 40%;
   height: 100%;
+  /* border-radius: 8px; */
   /* border: 1px solid green; */
 }
 
@@ -484,7 +485,7 @@ body.dark {
 
 #article-content div a {
   text-decoration: none;
-  color: var(--textLink)
+  color: var(--textLink);
 }
 
 #article-content div pre {
@@ -495,7 +496,7 @@ body.dark {
 }
 
 #article-content div code {
-  background: #f2f2f2;
+  /* background: #f2f2f2; */
 }
 
 blockquote {
@@ -938,7 +939,7 @@ blockquote {
   }
   #card-body {
     width: auto;
-    padding: 29px;
+    padding: 29px 12px;
     /* border: 1px solid red; */
   }
 

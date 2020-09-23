@@ -1,10 +1,10 @@
 ---
-path: "/my-first-blog"
+path: "/getting-started-with-react-and-d3-interactive-bar-chart"
 date: "2020-01-14"
 readTime: "7 min read"
 title: "Getting started with React and D3 — interactive Bar Chart."
-tags: "TypeScript GraphQL React"
-featuredImage: ../../images/2019nCoV.png
+tags: "JavaScript D3.js React"
+featuredImage: ../../images/bar-chart.png
 author: "Livingstone Asabahebwa"
 description: "D3, which stands for data driven documents, has been the industry standard for creating custom data visualizations on the web since it’s creation in 2011. I like to think about D3 as a library that loads data and attaches it to the DOM. React is a Facebook technology which makes it painless to create interactive UIs..."
 ---
@@ -213,14 +213,14 @@ Check back in a few days, I’ll be writing about adding a brush with React and 
 
 ### If you enjoyed reading this, you may also enjoy some of my other blogs:
 
-- Make a clever bitcoin price chart with React and D3.
+- [Make a clever bitcoin price chart with React and D3](https://medium.com/analytics-vidhya/make-a-clever-bitcoin-price-chart-with-react-and-d3-e6359d604b54).
 
-- Basic Node.js setup every JavaScript backend developer needs to know.
+- [Basic Node.js setup every JavaScript backend developer needs to know](https://medium.com/@ahebwa49/basic-node-js-setup-every-javascript-backend-developer-needs-to-know-f157dad834e6).
 
 ### References and Further Resources:
 
-- freeCodeCamp
+- [freeCodeCamp](https://www.freecodecamp.org/learn/data-visualization/data-visualization-with-d3)
 
-- d3js.org
+- [d3js.org](https://d3js.org/)
 
-### I have a keen interest about data visualization with React and D3. If you follow me on Twitter, I won’t waste your time. !
+### I have a keen interest about data visualization with React and D3. If you [follow me on Twitter](https://twitter.com/lasabahebwa), I won’t waste your time!
