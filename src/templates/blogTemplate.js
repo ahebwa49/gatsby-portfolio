@@ -1,11 +1,8 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
-import Moment from "react-moment"
 
 import Layout from "../components/layout"
-
-import "./blogTemplate.css"
 
 export default function Template({ data }) {
   const post = data.markdownRemark
