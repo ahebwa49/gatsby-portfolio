@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: "My gatsby super blog",
-    description: "Gatsby blog with markdown",
+    description: "Livingstone gatsby super blog with markdown",
     author: "Livingstone Asabahebwa",
   },
   plugins: [
@@ -23,6 +23,7 @@ module.exports = {
         start_url: "/",
         background_color: "#663399",
         theme_color: "#663399",
+        icon: "src/images/favicon.png",
         display: "minimal-ui",
       },
     },

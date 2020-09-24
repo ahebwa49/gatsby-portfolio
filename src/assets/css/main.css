@@ -127,8 +127,8 @@ body.dark {
   /* border: 1px solid red; */
 }
 
-#header-list :nth-child(4){
- margin-left: 20px;
+#header-list :nth-child(4) {
+  margin-left: 20px;
 }
 
 #mobile-header-elements {
@@ -549,7 +549,7 @@ blockquote {
   font-weight: 700;
   font-size: 27.2829px;
   padding: 0px;
-  margin: 0px 0px 29px;
+  margin: 29px 0px 18px;
 }
 
 #about h3 {
@@ -561,7 +561,7 @@ blockquote {
   font-weight: 700;
   font-size: 23.7511px;
   padding: 0px;
-  margin: 0px 0px 29px;
+  margin: 29px 0px 18px;
 }
 
 .external-link {
