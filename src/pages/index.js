@@ -67,8 +67,6 @@ const IndexPage = () => (
             const featuredImgFluid =
               post.node.frontmatter.featuredImage.childImageSharp.fluid
             const postTags = tags.split(" ")
-            // console.log(postTags)
-            console.log(post.node.frontmatter)
 
             return (
               <Card

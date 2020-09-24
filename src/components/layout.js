@@ -1,7 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
-import { ThemeToggler } from "gatsby-plugin-dark-mode"
 
 import TwitterIcon from "@material-ui/icons/Twitter"
 import GitHubIcon from "@material-ui/icons/GitHub"
@@ -25,26 +24,48 @@ const ListLink = props => (
 )
 
 class Toggle extends React.Component {
-  render() {
-    return (
-      <ThemeToggler>
-        {({ theme, toggleTheme }) => {
-          if (theme === "light") {
-            return (
-              <div onClick={() => toggleTheme("dark")} id="theme-name">
-                Dark
-              </div>
-            )
-          } else {
-            return (
-              <div onClick={() => toggleTheme("light")} id="theme-name">
-                Light
-              </div>
-            )
-          }
-        }}
-      </ThemeToggler>
+  constructor(props) {
+    super(props)
+    this.state = {
+      lightMode: true,
+      darkMode: false,
+    }
+  }
+
+  setDarkMode = () => {
+    this.setState(
+      {
+        lightMode: false,
+        darkMode: true,
+      },
+      () => document.querySelector("body").classList.add("dark")
     )
+  }
+
+  setLightMode = () => {
+    this.setState(
+      {
+        lightMode: true,
+        darkMode: false,
+      },
+      () => document.querySelector("body").classList.remove("dark")
+    )
+  }
+
+  render() {
+    if (this.state.lightMode) {
+      return (
+        <div onClick={this.setDarkMode} id="theme-name">
+          dark
+        </div>
+      )
+    } else {
+      return (
+        <div onClick={this.setLightMode} id="theme-name">
+          light
+        </div>
+      )
+    }
   }
 }
 
@@ -85,9 +106,8 @@ class Layout extends React.Component {
             </Link>
           </div>
           <div id="mobile-header-elements">
-            <div id="mobile-dark-button">
-              <Toggle />
-            </div>
+            <Toggle />
+
             <div id="menu-button" onClick={this.showMobileMenu}>
               <MenuButton />
             </div>
@@ -97,9 +117,7 @@ class Layout extends React.Component {
             <ListLink to="/about">About</ListLink>
             <ListLink to="/products/">Products</ListLink>
             <ListLink to="/blog/">Blog</ListLink>
-            <div id="dark-button">
-              <Toggle />
-            </div>
+            <Toggle />
           </div>
         </header>
 
