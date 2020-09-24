@@ -89,7 +89,7 @@ const IndexPage = () => (
                 <PlanogyImage />
               </div>
               <div id="product-description">
-                <a href="https://planogy.com/" target="_blank">
+                <a href="https://planogy.com/" target="_blank" rel="noreferrer">
                   <h3>Planogy</h3>
                 </a>
                 <p>
@@ -104,7 +104,11 @@ const IndexPage = () => (
                 <HotlineImage />
               </div>
               <div id="product-description">
-                <a href="https://thehotline.herokuapp.com/" target="_blank">
+                <a
+                  href="https://thehotline.herokuapp.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <h3>Hotline</h3>
                 </a>
                 <p>
@@ -120,7 +124,11 @@ const IndexPage = () => (
                 <BlogImage />
               </div>
               <div id="product-description">
-                <a href="https://covid-19-info.live/" target="_blank">
+                <a
+                  href="https://covid-19-info.live/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <h3>2019nCoV Visualizer</h3>
                 </a>
                 <p>

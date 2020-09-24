@@ -6,11 +6,9 @@ import Layout from "../components/layout"
 
 export default function Template({ data }) {
   const post = data.markdownRemark
-  console.log(post)
   const postTags = post.frontmatter.tags.split(" ")
-  console.log(postTags)
   let featuredImgFluid = post.frontmatter.featuredImage.childImageSharp.fluid
-  const { title, author, date } = post.frontmatter
+  const { title } = post.frontmatter
 
   return (
     <Layout>

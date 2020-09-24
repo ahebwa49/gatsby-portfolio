@@ -3,10 +3,6 @@ import { Link } from "gatsby"
 import CloseIcon from "@material-ui/icons/Close"
 
 class MobileMenu extends Component {
-  constructor(props) {
-    super(props)
-  }
-
   render() {
     return (
       <div className="mobileMenu">

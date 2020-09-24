@@ -1,6 +1,5 @@
 import React from "react"
 import Layout from "../components/layout"
-import Image from "../components/blogImage"
 
 export default function About() {
   return (
@@ -14,6 +13,7 @@ export default function About() {
           <a
             href="https://www.mak.ac.ug/"
             target="_blank"
+            rel="noreferrer"
             className="external-link"
           >
             Makerere University
@@ -29,6 +29,7 @@ export default function About() {
           <a
             href="https://planogy.com/"
             target="_blank"
+            rel="noreferrer"
             className="external-link"
           >
             Planogy
@@ -37,6 +38,7 @@ export default function About() {
           <a
             href="https://www.swipe2payug.com/"
             target="_blank"
+            rel="noreferrer"
             className="external-link"
           >
             Swipe2pay
@@ -49,6 +51,7 @@ export default function About() {
           <a
             href="https://aimform.com/"
             target="_blank"
+            rel="noreferrer"
             className="external-link"
           >
             aimform
@@ -63,10 +66,6 @@ export default function About() {
         <p id="about-paragraph">
           When I'm not coding, I'm in nature exploring, gaming, or swimming.
         </p>
-
-        {/* <div id="about-image">
-          <Image />
-        </div> */}
 
         <h2>Speaking</h2>
         <p id="about-paragraph">
