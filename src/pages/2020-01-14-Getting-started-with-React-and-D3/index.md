@@ -213,9 +213,9 @@ Check back in a few days, I’ll be writing about adding a brush with React and 
 
 ### If you enjoyed reading this, you may also enjoy some of my other blogs:
 
-- [Make a clever bitcoin price chart with React and D3](https://medium.com/analytics-vidhya/make-a-clever-bitcoin-price-chart-with-react-and-d3-e6359d604b54).
+- [Make a clever bitcoin price chart with React and D3](https://www.asabahebwa.com/make-a-clever-bitcoin-price-chart-with-react-and-D3).
 
-- [Basic Node.js setup every JavaScript backend developer needs to know](https://medium.com/@ahebwa49/basic-node-js-setup-every-javascript-backend-developer-needs-to-know-f157dad834e6).
+- [Historical FIFA world cup geo map with React and D3.](https://www.asabahebwa.com/historical-FIFA-world-cup-geo-map-with-react-and-d3.)
 
 ### References and Further Resources:
 

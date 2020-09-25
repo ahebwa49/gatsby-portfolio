@@ -328,6 +328,6 @@ I also hope you got a great insight on how to visualize map data with React and 
 
 **If you enjoyed reading this, you may also enjoy some of my other blogs:**
 
-- [Getting started with React and D3 — interactive Bar Chart.](https://asabahebwa.com/getting-started-with-react-and-d3-interactive-bar-chart)
+- [Getting started with React and D3 — interactive Bar Chart.](https://www.asabahebwa.com/getting-started-with-react-and-d3-interactive-bar-chart)
 
-- [Make a clever bitcoin price chart with React and D3.](https://asabahebwa.com/getting-started-with-react-and-d3-interactive-bar-chart)
+- [Make a clever bitcoin price chart with React and D3.](https://www.asabahebwa.com/make-a-clever-bitcoin-price-chart-with-react-and-D3)
