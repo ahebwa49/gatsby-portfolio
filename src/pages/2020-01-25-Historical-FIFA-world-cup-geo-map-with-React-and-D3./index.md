@@ -1,6 +1,6 @@
 ---
 path: "/historical-FIFA-world-cup-geo-map-with-react-and-d3."
-date: "2020-01-25"
+date: "2020-04-25"
 readTime: "9 min read"
 title: "Historical FIFA world cup geo map with React and D3."
 tags: "JavaScript d3.js React"

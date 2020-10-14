@@ -1,6 +1,6 @@
 ---
 path: "/getting-started-with-react-and-d3-interactive-bar-chart"
-date: "2020-01-14"
+date: "2020-02-14"
 readTime: "7 min read"
 title: "Getting started with React and D3 — interactive Bar Chart."
 tags: "JavaScript D3.js React"

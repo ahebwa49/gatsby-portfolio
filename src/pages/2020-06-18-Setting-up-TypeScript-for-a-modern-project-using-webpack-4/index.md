@@ -4,9 +4,9 @@ date: "2020-06-18"
 readTime: "8 min read"
 title: "Setting up TypeScript for a modern project using webpack 4"
 tags: "TypeScript Webpack JavaScript"
-featuredImage: ../../images/webpack.png
+featuredImage: ../../images/webpack.jpg
 author: "Livingstone Asabahebwa"
-description: "You might be wondering… why TypeScript?...Well, The type system increases the code quality, readability, and makes it easy to maintain and refactor the codebase. Errors can be caught at compile time rather than at runtime and this makes it easy to build complex applications with large teams working on the same code..."
+description: "You might be wondering… why TypeScript? Well, The type system increases the code quality, readability, and makes it easy to maintain and refactor the codebase. Errors can be caught at compile time rather than at runtime and this makes it easy to build complex applications with large teams working..."
 ---
 
 TypeScript is an open-sourced language developed and maintained by Microsoft. First released in October 2012, its development was overseen by Anders Herlsberg who also had a big role in the creation of C# language. TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.
