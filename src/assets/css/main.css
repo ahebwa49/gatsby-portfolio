@@ -603,6 +603,10 @@ blockquote {
   margin: 0px 0px 29px;
 }
 
+#products h2 {
+  /* border: 1px solid red; */
+}
+
 #products p {
   color: var(--textNormal);
   font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -627,7 +631,12 @@ blockquote {
   border-radius: 30px;
   padding: 0px 3rem;
   margin: calc(62.5px + 3rem) 0px 29px;
+  /* border: 1px solid blue; */
+}
+
+#product.one {
   /* border: 1px solid red; */
+  margin-top: 0px;
 }
 
 #product-image {
@@ -976,6 +985,10 @@ blockquote {
     font-size: 36px;
     padding: 0px;
     margin: 0px 0px 29px;
+  }
+
+  #product.one {
+    margin-top: 5rem;
   }
 
   #products p {

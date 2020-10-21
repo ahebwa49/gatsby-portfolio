@@ -87,7 +87,7 @@ const IndexPage = () => (
             })}
             <div id="products">
               <h2>Products</h2>
-              <div id="product">
+              <div id="product" className="one">
                 <div id="product-image">
                   <PlanogyImage />
                 </div>
