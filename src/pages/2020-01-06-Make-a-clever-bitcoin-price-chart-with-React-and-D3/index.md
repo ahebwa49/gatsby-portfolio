@@ -2,7 +2,7 @@
 path: "/make-a-clever-bitcoin-price-chart-with-react-and-D3"
 date: "2020-01-06"
 readTime: "8 min read"
-title: "Make a clever bitcoin price chart with React and D3"
+title: "Make a clever bitcoin price chart with React and D3."
 tags: "JavaScript D3.js React"
 featuredImage: ../../images/bitcoin.jpg
 author: "Livingstone Asabahebwa"

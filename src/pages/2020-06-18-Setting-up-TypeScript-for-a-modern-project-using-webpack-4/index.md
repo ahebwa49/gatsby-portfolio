@@ -2,7 +2,7 @@
 path: "/setting-up-typescript-for-a-modern-project-using-webpack-4"
 date: "2020-06-18"
 readTime: "8 min read"
-title: "Setting up TypeScript for a modern project using webpack 4"
+title: "Setting up TypeScript for a modern project using webpack 4."
 tags: "TypeScript Webpack JavaScript"
 featuredImage: ../../images/webpack.jpg
 author: "Livingstone Asabahebwa"

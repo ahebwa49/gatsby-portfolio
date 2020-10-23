@@ -2,7 +2,7 @@
 path: "/interacting-with-restul-apis-using-typescript-hooks-and-axios"
 date: "2020-09-09"
 readTime: "7 min read"
-title: "Interacting with RESTful APIs using TypeScript, Hooks, and Axios."
+title: "Interacting with RESTful APIs using TypeScript, Hooks, and Axios. Part 1."
 tags: "TypeScript React Hooks Axios"
 featuredImage: ../../images/new-typescript-react.png
 author: "Livingstone Asabahebwa"
