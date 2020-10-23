@@ -47,7 +47,7 @@ const IndexPage = () => (
             <div id="heading">
               <div id="heading-wording">
                 <h1>
-                  Hi, I'm Livingstone. I build products with TypeScript, React,
+                  Hi, I'm Livingstone. I build products with TypeScript,
                   GraphQL, and Python.
                 </h1>
               </div>
