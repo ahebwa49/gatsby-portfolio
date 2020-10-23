@@ -23,7 +23,7 @@ export default function About() {
         </p>
         <p id="about-paragraph">
           I specialize in building enterprise web platforms using JavaScript
-          (TypeScript nowadays!), Node, GraphQL, and React. I've been lucky to
+          (TypeScript nowadays!), Node, GraphQL, React and Python. I've been lucky to
           work with a lot of brilliant engineers along that way at some of the
           best startups in the world like{" "}
           <a
