@@ -25,9 +25,8 @@ export default function About() {
               <PlanogyImage />
             </div>
             <div id="product-description">
-              <a href="https://planogy.com/" target="_blank" rel="noreferrer">
-                <h3>Planogy</h3>
-              </a>
+              <h3>Planogy</h3>
+
               <p>
                 A tool that helps you keep track of your design work. We allow
                 designers to share design assets with their team who can leave
@@ -36,6 +35,7 @@ export default function About() {
             </div>
           </div>
         </a>
+
         <a
           href="https://thehotline.herokuapp.com/"
           target="_blank"
@@ -47,13 +47,8 @@ export default function About() {
               <HotlineImage />
             </div>
             <div id="product-description">
-              <a
-                href="https://thehotline.herokuapp.com/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <h3>Hotline</h3>
-              </a>
+              <h3>Hotline</h3>
+
               <p>
                 Sometimes even if you think your relationship is healthy it can
                 hide signs of abuse from one of the partners. This app will help
@@ -63,6 +58,7 @@ export default function About() {
             </div>
           </div>
         </a>
+
         <a
           href="https://covid-19-info.live/"
           target="_blank"
@@ -74,13 +70,8 @@ export default function About() {
               <BlogImage />
             </div>
             <div id="product-description">
-              <a
-                href="https://covid-19-info.live/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <h3>2019nCoV Visualizer</h3>
-              </a>
+              <h3>2019nCoV Visualizer</h3>
+
               <p>
                 An interactive visualization of the exponential spread of
                 COVID-19 across the world. These graphs are not just images.

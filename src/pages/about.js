@@ -24,7 +24,7 @@ export default function About() {
         <p id="about-paragraph">
           I specialize in building enterprise web platforms using JavaScript
           (TypeScript nowadays!), Node, GraphQL, React and Python. I've been lucky to
-          work with a lot of brilliant engineers along that way at some of the
+          work with a lot of brilliant engineers along the way at some of the
           best startups in the world like{" "}
           <a
             href="https://planogy.com/"

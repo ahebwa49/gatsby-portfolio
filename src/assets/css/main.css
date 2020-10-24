@@ -652,7 +652,7 @@ blockquote {
   /* border: 1px solid blue; */
 }
 
-#product-description a {
+#product-description {
   text-decoration: none;
 }
 
@@ -661,7 +661,7 @@ blockquote {
   font-size: 18px;
   line-height: 1.6;
 }
-#product-description a h3 {
+#product-description h3 {
   box-sizing: border-box;
   min-width: 0px;
   color: var(--textNormal);
@@ -1011,6 +1011,9 @@ blockquote {
     height: auto;
     padding: 1rem;
     padding-bottom: 0rem;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
     /* border: 1px solid red; */
   }
 
@@ -1020,6 +1023,9 @@ blockquote {
     margin-top: -3rem;
     position: relative;
     width: 100%;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
     /* border: 1px solid blue; */
   }
 
@@ -1029,6 +1035,9 @@ blockquote {
     justify-content: center;
     width: 100%;
     padding-bottom: 20px;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
     /* border: 1px solid purple; */
   }
 
