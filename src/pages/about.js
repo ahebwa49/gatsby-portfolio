@@ -23,7 +23,7 @@ export default function About() {
         </p>
         <p id="about-paragraph">
           I specialize in building enterprise web platforms using JavaScript
-          (TypeScript nowadays!), Node, GraphQL, React and Python. I've been lucky to
+          (TypeScript nowadays!), Node, GraphQL, React, and Python. I've been lucky to
           work with a lot of brilliant engineers along the way at some of the
           best startups in the world like{" "}
           <a
@@ -56,7 +56,7 @@ export default function About() {
           >
             aimform
           </a>{" "}
-          as a frontend application developer architecting a fintech platform
+          as a front-end application developer architecting a fintech platform
           containing multiple SaaS solutions surrounding education. I build my
           own products on the side (like a 2019nCoV world map visualizer) and
           have been blogging things I’ve learned over the years to share what
