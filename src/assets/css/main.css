@@ -142,21 +142,42 @@ a {
 
 #list-link-style span {
   color: var(--textNormal);
-  display: flex;
+  display: inline-block;
+  position: relative;
+  line-height: 16px;
   cursor: pointer;
   margin: 0.2rem 0.7rem;
-  /* border-radius: 3px; */
-  transition: border 0.1s linear;
+  padding: 0.5rem 0rem;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
   color: var(--textNormal);
-  margin-right: 2px;
-  /* border: 1px solid red */
+  /* border: 1px solid red; */
 }
 
-#list-link-style span:hover {
-  border-bottom: 3px solid var(--header-link-hover);
+#list-link-style span:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 3px;
+  left: 50%;
+  position: absolute;
+  background: var(--header-link-hover);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
 }
+
+#list-link-style span:hover:after {
+  width: 100%;
+  left: 0;
+}
+
 .active-link span {
-  border-bottom: 3px solid var(--header-link-hover);
+  color: var(--header-link-hover) !important;
 }
 
 #index-page {
