@@ -838,12 +838,13 @@ blockquote {
 
   #mobile-menu {
     display: flex;
-    position: absolute;
+    position: fixed;
     z-index: 20;
     width: 100%;
     top: 0;
     right: 0;
     left: 0;
+    touch-action: none;
     height: 100vh;
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
@@ -877,7 +878,7 @@ blockquote {
   .list-item {
     text-align: center;
     font-size: 1.5rem;
-    margin: 0px 0px 1rem;
+    margin: 0.5rem 0rem;
     /* border: 1px solid cyan; */
   }
 
