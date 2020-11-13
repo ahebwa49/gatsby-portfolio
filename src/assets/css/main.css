@@ -862,6 +862,7 @@ blockquote {
   .listItems {
     display: flex;
     color: white;
+    height: fit-content;
     font-size: 18px;
     font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
       Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
@@ -872,7 +873,7 @@ blockquote {
     font-weight: normal;
     flex-direction: column;
     /* border: 1px solid green; */
-    width: 85%;
+    width: 75%;
   }
 
   .list-item {
@@ -885,7 +886,7 @@ blockquote {
   .close {
     display: flex;
     /* border: 1px solid blue; */
-    width: 15%;
+    margin-left: auto;
     height: fit-content;
     justify-content: flex-end;
   }
