@@ -886,6 +886,7 @@ blockquote {
     display: flex;
     /* border: 1px solid blue; */
     width: 15%;
+    height: fit-content;
     justify-content: flex-end;
   }
 
