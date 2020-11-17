@@ -114,31 +114,6 @@ const IndexPage = () => (
 
               <span>
                 <a
-                  href="https://thehotline.herokuapp.com/"
-                  target="_blank"
-                  rel="noreferrer"
-                  style={{ textDecoration: "none" }}
-                >
-                  <div id="product">
-                    <div id="product-image">
-                      <HotlineImage />
-                    </div>
-                    <div id="product-description">
-                      <h3>Hotline</h3>
-
-                      <p>
-                        Sometimes even if you think your relationship is healthy
-                        it can hide signs of abuse from one of the partners.
-                        This app will help you identify signs of abuse and offer
-                        resources on what you can do next.
-                      </p>
-                    </div>
-                  </div>
-                </a>
-              </span>
-
-              <span>
-                <a
                   href="https://covid-19-info.live/"
                   target="_blank"
                   rel="noreferrer"

@@ -10,8 +10,8 @@ export default function About() {
       <div id="products">
         <h1>Products</h1>
         <p>
-          Here you will find some of my personal projects I've worked on and
-          built over the years. Some are alive and thriving while others have
+          Here you will find some of my personal/group projects I've worked on and
+          built over the years. The ones here are alive and thriving while others have
           been buried in the graveyard of my Github <span role="img">😅</span>.
         </p>
         <a
