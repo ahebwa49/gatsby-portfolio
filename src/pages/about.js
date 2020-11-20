@@ -19,7 +19,7 @@ export default function About() {
             Makerere University
           </a>{" "}
           with a Bachelors degree in Computer Engineering. I'm a software
-          developer and have been coding for over three years.{" "}
+          developer and have been coding for close to 3 years.{" "}
         </p>
         <p id="about-paragraph">
           I specialize in building enterprise web platforms using JavaScript

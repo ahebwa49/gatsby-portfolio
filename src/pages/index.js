@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 import Card from "../components/card"
 import Image from "../components/image"
 import PlanogyImage from "../components/planogyImage"
-import HotlineImage from "../components/hotlineImage"
+import Swipe2payImage from "../components/swipe2payImage"
 import BlogImage from "../components/blogImage"
 
 import "../assets/css/main.css"
@@ -131,6 +131,30 @@ const IndexPage = () => (
                         of COVID-19 across the world. These graphs are not just
                         images. Hover over any country to see the data behind
                         it.
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </span>
+              <span>
+                <a
+                  href="https://www.swipe2payug.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                  style={{ textDecoration: "none" }}
+                >
+                  <div id="product">
+                    <div id="product-image">
+                      <Swipe2payImage />
+                    </div>
+                    <div id="product-description">
+                      <h3>swipe2pay</h3>
+
+                      <p>
+                        swipe2pay takes the friction out of payments, so you can
+                        focus on what you do best " Making sales". It allows
+                        SMEs to accept mobile payments and grow their
+                        businesses.
                       </p>
                     </div>
                   </div>
