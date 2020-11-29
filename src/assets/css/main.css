@@ -701,6 +701,16 @@ blockquote {
     "Segoe UI Symbol";
 }
 
+/* On screens that are 1200px or less, set the background color to olive */
+@media screen and (max-width: 1200px) {
+  #header {
+    width: 85%;
+  }
+  #main {
+    width: 85%;
+  }
+}
+
 /* On screens that are 1100px or less, set the background color to olive */
 @media screen and (max-width: 1100px) {
   #header {
@@ -714,10 +724,10 @@ blockquote {
 /* On screens that are 1000px or less, set the background color to olive */
 @media screen and (max-width: 1000px) {
   #header {
-    width: 85%;
+    width: 95%;
   }
   #main {
-    width: 85%;
+    width: 95%;
   }
 }
 
@@ -746,7 +756,7 @@ blockquote {
   }
 
   #card {
-    /* border: 1px solid red; */
+    border: 1px solid red;
     /* margin: 0px 8px; */
     flex-direction: column;
     height: auto;
